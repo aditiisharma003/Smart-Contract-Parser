@@ -5,17 +5,6 @@ python-multipart==0.0.9
 pydantic==2.8.2
 pydantic-core==2.20.1
 
-# --- CrewAI + LangChain ---
-crewai==0.60.0
-crewai-tools
-langchain==0.3.7
-langchain-core==0.3.15
-langchain-community==0.3.3
-
-# --- Gemini ---
-google-generativeai==0.7.2
-langchain-google-genai==1.0.5
-
 # --- Utilities ---
 python-dotenv==1.0.1
 
@@ -26,4 +15,16 @@ numpy==1.26.4
 pip==24.2
 setuptools==75.1.0
 wheel==0.44.0
+# --- CrewAI + LangChain ---
+crewai
+crewai-tools
+langchain
+langchain-core
+langchain-community
+
+# --- Gemini ---
+google-generativeai
+langchain-google-genai
+
+
 
