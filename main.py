@@ -55,7 +55,7 @@ class HealthResponse(BaseModel):
 
 # Initialize Gemini LLM
 def get_llm():
-    api_key = os.getenv("GAK")
+    api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
         raise ValueError("GEMINI_API_KEY not found in environment variables. Please set it in .env file")
     
@@ -378,5 +378,6 @@ if __name__ == "__main__":
     # uvicorn.run(app, host="0.0.0.0", port=port)
 
     uvicorn.run(app)
+
 
 
