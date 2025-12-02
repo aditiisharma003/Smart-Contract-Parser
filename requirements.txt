@@ -1,10 +1,24 @@
+# --- Core ---
 fastapi
 uvicorn[standard]
 python-multipart
 pydantic
+
+# --- CrewAI + LangChain ---
 crewai
 crewai-tools
 langchain
-langchain-google-genai
+langchain-core
+langchain-community
+
+# --- Gemini ---
 google-generativeai
+langchain-google-genai
+
+# --- Utilities ---
 python-dotenv
+
+# --- Required for Render (prevents pip backtracking) ---
+pip
+setuptools
+wheel
