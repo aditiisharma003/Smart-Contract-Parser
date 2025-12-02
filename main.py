@@ -367,13 +367,14 @@ async def audit_contract(submission: ContractSubmission):
         raise HTTPException(status_code=500, detail=f"Audit failed: {str(e)}")
 
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", 8000))
-    print("\n" + "="*60)
+    # port = int(os.getenv("PORT", 8000))
+    # print("\n" + "="*60)
 
-    print("🛡️  SMART CONTRACT SECURITY AUDITOR")
-    print("="*60)
-    print(f"Server starting on http://localhost:{port}")
-    print(f"Gemini API configured: {bool(os.getenv('GEMINI_API_KEY'))}")
-    print("="*60 + "\n")
+    # print("🛡️  SMART CONTRACT SECURITY AUDITOR")
+    # print("="*60)
+    # print(f"Server starting on http://localhost:{port}")
+    # print(f"Gemini API configured: {bool(os.getenv('GEMINI_API_KEY'))}")
+    # print("="*60 + "\n")
     # uvicorn.run(app, host="0.0.0.0", port=port)
+
     uvicorn.run(app)
